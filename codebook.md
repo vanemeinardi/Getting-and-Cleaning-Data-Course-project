@@ -11,13 +11,13 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 * An identifier of the subject who carried out the experiment.
 
 
-This code book summarizes the resulting data fields in tidy.txt. The variables are divided into two groups, the id.vars and the measure vars. Their description is given bellow.
-## Id Variables
+This code book summarizes the resulting data fields in tidy.txt. 
+## Identifiers
 * SubjectId - The ID of the test subject, its range between 1 to 30.
 * Activity - The type of activity performed when the corresponding measurements were taken. Six levels WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS,
 SITTING, STANDING,LAYING. 
 
-## Measured variables
+## Variables
 * TimeBodyAccMeanX
 * TimeBodyAccMeanY
 * TimeBodyAccMeanZ
