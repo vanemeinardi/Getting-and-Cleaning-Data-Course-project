@@ -28,7 +28,7 @@ The following is a sumary of the activities performed to achieve the steps 1 to 
 
 ## WHAT YOU FIND IN THIS REPOSITORY
 
-* CodeBook.md: information about raw and tidy data set and elaboration made to transform them
+* CodeBook.md: information about the variables in thetidy data set.
 * README.md: this file
 * run_analysis.R: R script to transform raw data set in a tidy one
 tidy.txt
