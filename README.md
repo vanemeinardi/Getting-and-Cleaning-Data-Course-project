@@ -13,11 +13,11 @@ for each measurement.
 the average of each variable for each activity and each subject.
 
 ## PROJECT SUMMARY
-The following is a sumary of the activities performed to achieve the steps 1-5 
+The following is a sumary of the activities performed to achieve the steps 1 to 5 
 * Download the dataset if it does not already exist in the working directory.
-* Set the working directory
+* Set the working directory.
 * Load the  raw data from file UCI HAR Dataset and assign column names.
-* Create the trainingData table and the testData table by merging the train data set and the test data set respectively
+* Create the trainingData table and the testData table by merging the train data set and the test data set respectively.
 * Merge the two data sets.
 * Create a logical vector to keep the columns with mean and standart deviation.
 * Use the logical vector to obtain a new table with the columns desired.
