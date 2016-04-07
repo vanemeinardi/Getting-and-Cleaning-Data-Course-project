@@ -90,7 +90,8 @@ data$Activity <- factor(data$Activity)
 data$SubjectId <- as.factor(data$SubjectId)
 library(reshape2)
 datamelt <- melt(data, id = c("SubjectId", "Activity"))
-datamean <- dcast(datamelt, SubjectId + Activity ~ variable, mean)
-
+library(plyr)
+grouped <- group_by(datamelt, SubjectId, Activity)
+finaldata <- ddply(grouped, .(SubjectId, Activity, variable), summarize, mean = mean(value))
 #Finally write a table with the tidy data.
-write.table(datamean, "tidy.txt", row.names = FALSE, quote = FALSE)
+write.table(finaldata, "tidy.txt", row.names = FALSE, quote = FALSE)
